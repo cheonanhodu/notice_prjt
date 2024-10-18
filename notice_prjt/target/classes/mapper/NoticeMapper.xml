@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.human.notice.mapper.NoticeMapper">
+    <select id="getNotice" resultType="noticeVO">
+        SELECT * FROM tb_notice WHERE n_status = 'N'
+    </select>
+
+    <insert id="insertNotice" parameterType="noticeVO">
+        INSERT INTO tb_notice (n_category, n_title, n_content)
+        VALUES (#{n_category}, #{n_title}, #{n_content})
+    </insert>
+</mapper>
