@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h2>공지사항 작성</h2>
+    <h2>공지사항 등록</h2>
     <form action="/notice/writeProcess" method="post">
         <label>카테고리: </label><input type="text" name="n_category"/><br>
         <label>제목: </label><input type="text" name="n_title"/><br>
